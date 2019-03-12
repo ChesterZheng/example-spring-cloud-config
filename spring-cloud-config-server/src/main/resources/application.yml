@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: https://xxx #公用配置
-          username: xxx
-          password: xxx
+          uri: https://gitee.com/chester_zheng/example-spring-cloud-config-repo #公用配置
+          username: Chester_Zheng
+          password: avrillavigne1005

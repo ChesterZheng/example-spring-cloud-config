@@ -7,9 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://xxx
-          username: xxx
-          password: xxx
+          uri: https://gitee.com/chester_zheng/example-spring-cloud-config-repo
+          username: Chester_Zheng
+          password: avrillavigne1005
 logging:
   level:
     root: INFO

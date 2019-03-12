@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: foobar
+    index: ${random.long}
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: dev
+      label: master # 当ConfigServer后端存储为Git的时候 默认就是master分支
+      username: Chester_Zheng
+      password: avrillavigne1005
+    bus:
+      trace:
+        enabled: true # 默认值是false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  security:
+    enabled: false

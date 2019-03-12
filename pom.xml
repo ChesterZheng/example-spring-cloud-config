@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.example</groupId>
+	<artifactId>spring-cloud-config-parent</artifactId>
+	<version>${spring-cloud-config-parent.version}</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.11.RELEASE</version>
+	</parent>
+
+
+	<properties>
+		<jdk.version>1.8</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-cloud-config-parent.version>0.0.1-SNAPSHOT</spring-cloud-config-parent.version>
+		<!-- 以下是模块版本 -->
+		<spring-cloud-config-server.version>${spring-cloud-config-parent.version}</spring-cloud-config-server.version>
+		<spring-cloud-config-client.version>${spring-cloud-config-parent.version}</spring-cloud-config-client.version>
+		<spring-cloud-config-server-encrypt.version>${spring-cloud-config-parent.version}</spring-cloud-config-server-encrypt.version>
+		<spring-cloud-config-server-encrypt-rsa.version>${spring-cloud-config-parent.version}</spring-cloud-config-server-encrypt-rsa.version>
+		<spring-cloud-config-server-authentication.version>${spring-cloud-config-parent.version}</spring-cloud-config-server-authentication.version>
+		<spring-cloud-config-client-authentication.version>${spring-cloud-config-parent.version}</spring-cloud-config-client-authentication.version>
+		<spring-cloud-config-server-eureka.version>${spring-cloud-config-parent.version}</spring-cloud-config-server-eureka.version>
+		<spring-cloud-config-client-eureka.version>${spring-cloud-config-parent.version}</spring-cloud-config-client-eureka.version>
+		<spring-cloud-config-client-refresh.version>${spring-cloud-config-parent.version}</spring-cloud-config-client-refresh.version>
+		<spring-cloud-config-client-refresh-bus.version>${spring-cloud-config-parent.version}</spring-cloud-config-client-refresh-bus.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR4</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<modules>
+		<module>spring-cloud-config-server</module>
+		<module>spring-cloud-config-client</module>
+		<module>spring-cloud-config-server-encrypt</module>
+		<module>spring-cloud-config-server-encrypt-rsa</module>
+		<module>spring-cloud-config-server-authentication</module>
+		<module>spring-cloud-config-client-authentication</module>
+		<module>spring-cloud-config-server-eureka</module>
+		<module>spring-cloud-config-client-eureka</module>
+		<module>spring-cloud-config-client-refresh</module>
+		<module>spring-cloud-config-client-refresh-bus</module>
+	</modules>
+</project>

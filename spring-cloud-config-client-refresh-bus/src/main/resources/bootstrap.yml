@@ -7,8 +7,8 @@ spring:
       uri: http://localhost:8080
       profile: dev
       label: master # 当ConfigServer后端存储为Git的时候 默认就是master分支
-      username: Chester_Zheng
-      password: avrillavigne1005
+      username: xxx
+      password: xxx
     bus:
       trace:
         enabled: true # 默认值是false

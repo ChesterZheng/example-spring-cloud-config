@@ -3,8 +3,8 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/chester_zheng/{application}
-          username: Chester_Zheng
-          password: avrillavigne1005
+          uri: https://xxx/{application}
+          username: xxx
+          password: xxx
 server:
   port: ${port}
